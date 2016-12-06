@@ -1,0 +1,3 @@
+2016年12月06日
+【決定版】UIPageViewControllerの使い方（Swift）
+http://qiita.com/Takeshi_Akutsu/items/dbf54df8e8a50e8ed5be
