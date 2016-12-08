@@ -8,11 +8,13 @@ class PageViewController: UIPageViewController {
     super.viewDidLoad()
     self.setViewControllers([getFirst()], direction: .forward, animated: true, completion: nil)
     self.dataSource = self
+    self.delegate = self
   }
   
   func getFirst() -> FirstVC {
-    return storyboard!.instantiateViewController(withIdentifier:"FirstVC")
-      as! FirstVC
+      return FirstVC()
+//    return storyboard!.instantiateViewController(withIdentifier:"FirstVC")
+//      as! FirstVC
   }
   func getSecond() -> SecondVC {
     return storyboard!.instantiateViewController(withIdentifier:"SecondVC")
@@ -28,6 +30,22 @@ class PageViewController: UIPageViewController {
     super.didReceiveMemoryWarning()
   }
 }
+extension PageViewController: UIPageViewControllerDelegate {
+  func pageViewController(_ pageViewController: UIPageViewController,
+                          willTransitionTo pendingViewControllers: [UIViewController]) {
+    print("willTransitonTo")
+  }
+  func pageViewController(_ pageViewController: UIPageViewController,
+        didFinishAnimating finished: Bool, previousViewControllers: [UIViewController],
+        transitionCompleted completed: Bool) {
+    if completed {
+      print(previousViewControllers.first!)
+      print("didFinish")
+//      print(self.childViewControllers.first!)
+    }
+  }
+}
+
 // after view：過ぎたview, before view：前のview
 // B comes after A in the alphabet.Aが過ぎてからBが来る。
 extension PageViewController : UIPageViewControllerDataSource {
@@ -42,8 +60,12 @@ extension PageViewController : UIPageViewControllerDataSource {
     } else if viewController is SecondVC {
       // 2 -> 3
       return getThird()
+    } else if viewController is ThirdVC {
+      // 3 -> 1
+      return getFirst()
+      
     } else {
-      // 3 -> end of the road
+      //   -> end of the road
       return nil
     }
   }
@@ -58,8 +80,11 @@ extension PageViewController : UIPageViewControllerDataSource {
     } else if viewController is SecondVC {
       // 2 -> 1
       return getFirst()
+    } else if viewController is FirstVC {
+      // 1 -> 3
+      return getThird()
     } else {
-      // 1 -> end of the road
+      //   -> end of the road
       return nil
     }
   }

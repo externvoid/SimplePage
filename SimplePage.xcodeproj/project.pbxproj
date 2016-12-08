@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6028127E1DF62EE700B10038 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6028127D1DF62EE700B10038 /* SecondViewController.swift */; };
 		602812801DF62EF400B10038 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6028127F1DF62EF400B10038 /* ThirdViewController.swift */; };
+		6051A6EA1DF8DBF9008048BB /* SomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6051A6E91DF8DBF9008048BB /* SomeView.xib */; };
 		60EA5B501DF555D10014F77C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EA5B4F1DF555D10014F77C /* AppDelegate.swift */; };
 		60EA5B521DF555D10014F77C /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EA5B511DF555D10014F77C /* PageViewController.swift */; };
 		60EA5B551DF555D10014F77C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60EA5B531DF555D10014F77C /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		6028127D1DF62EE700B10038 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = SecondViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		6028127F1DF62EF400B10038 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ThirdViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		6051A6E91DF8DBF9008048BB /* SomeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SomeView.xib; sourceTree = "<group>"; };
 		60EA5B4C1DF555D10014F77C /* SimplePage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimplePage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60EA5B4F1DF555D10014F77C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60EA5B511DF555D10014F77C /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = PageViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -66,6 +68,7 @@
 				60EA5B4F1DF555D10014F77C /* AppDelegate.swift */,
 				60EA5B511DF555D10014F77C /* PageViewController.swift */,
 				60EA5B531DF555D10014F77C /* Main.storyboard */,
+				6051A6E91DF8DBF9008048BB /* SomeView.xib */,
 				60EA5B561DF555D10014F77C /* Assets.xcassets */,
 				60EA5B581DF555D10014F77C /* LaunchScreen.storyboard */,
 				60EA5B5B1DF555D10014F77C /* Info.plist */,
@@ -133,6 +136,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6051A6EA1DF8DBF9008048BB /* SomeView.xib in Resources */,
 				60EA5B5A1DF555D10014F77C /* LaunchScreen.storyboard in Resources */,
 				60EA5B571DF555D10014F77C /* Assets.xcassets in Resources */,
 				60EA5B551DF555D10014F77C /* Main.storyboard in Resources */,
